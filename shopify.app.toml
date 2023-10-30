@@ -1,0 +1,29 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "Free-Gift-App"
+client_id = "226b84de6bde6a6e912b4ce4e966e7a7"
+application_url = "https://ee-chevrolet-influence-shell.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+use_legacy_install_flow = true
+
+[auth]
+redirect_urls = [
+  "https://ee-chevrolet-influence-shell.trycloudflare.com/auth/callback",
+  "https://ee-chevrolet-influence-shell.trycloudflare.com/auth/shopify/callback",
+  "https://ee-chevrolet-influence-shell.trycloudflare.com/api/auth/callback",
+  "https://ee-chevrolet-influence-shell.trycloudflare.com/.shopify/graphiql/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-07"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "naimish-store.myshopify.com"
